@@ -1,0 +1,297 @@
+body {
+  background: #1abc9c;
+  position: relative;
+}
+
+.navbar {
+  background: #34495e;
+  border-bottom: 0;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+#maincontent {
+  font-size: 18px;
+  color: white;
+  padding-bottom: 50px;
+  /*background: #7f8c8d;*/
+  background-image: url("../images/onesweet/test.jpg");
+  /*background-repeat: no-repeat;*/
+  background-attachment: fixed;
+}
+
+#maincontent hr {
+  margin-left: 150px;
+  color: #fff;
+  background-color: #fff;
+  height: 5px;
+}
+
+#maincontent img {
+  height: auto;
+  width: 500px;
+}
+
+#aboutus {
+  background: #16a085;
+  padding-bottom: 100px;
+  color: #fff;
+}
+
+#cakes {
+  /*background: #bdc3c7;
+  background-image: url("../images/onesweet/baking.jpg");*/
+  background-attachment: fixed;
+  padding-bottom: 100px;
+}
+
+#contactme {
+  background: #95a5a6;
+  /*background-repeat: no-repeat;*/
+}
+
+#navbar li {
+  list-style: none;
+  padding-top: 20px;
+}
+
+label {
+  visibility: hidden;
+}
+
+input[type=text]:focus,
+input[type=email]:focus {
+  background-color: lightblue;
+  visibility: visible;
+}
+
+.list-group li img {
+  height: auto;
+  width: 400px;
+}
+
+h1 {
+  font-size: 36px;
+  color: white;
+  padding-bottom: 25px;
+}
+
+.contactinfo {
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+  font-size: 16px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: lightblue;
+  font-size: 16px;
+}
+
+.list-group p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-info {
+  -webkit-box-shadow: 1px 3px 5px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 3px 5px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 3px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+.footer {
+  background: #34495e;
+  margin-left: -15px;
+}
+
+.social-icons img {
+  height: 35px;
+  display: inline;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row.no-gutters>[class^="col-"],
+.row.no-gutters>[class*=" col-"] {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+
+/* Image overlay */
+
+.hovereffect {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  margin-bottom: 10px;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(236, 240, 241, 0.5);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background: rgba(44, 62, 80, 0.6);
+  -webkit-transform: translatey(-100px);
+  -ms-transform: translatey(-100px);
+  transform: translatey(-100px);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  padding: 10px;
+}
+
+.hovereffect a.info {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: rgba(189, 195, 199, 0.8);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  margin: 30px 0 0;
+  padding: 7px 14px;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.hovereffect:hover h2,
+.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translatey(0);
+  -webkit-transform: translatey(0);
+  transform: translatey(0);
+}
+
+.hovereffect:hover a.info {
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+}
+
+#quotebtn {
+  width: 300px;
+  height: 100px;
+  font-size: 24px;
+}
+
+.social-icons {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.shadowed {
+  -webkit-filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 1.0));
+  filter: url(#drop-shadow);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('../images/onesweet/baking.jpg') center center / cover no-repeat;
+  }
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
